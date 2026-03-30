@@ -8,6 +8,8 @@
 
 Bonfire Voxy Bridge is a Fabric client companion that forces Voxy multiplayer saves into one shared Bonfire map root instead of splitting cache data by domain or IP.
 
+> Non-commercial source-available. Commercial use requires prior written permission via `mingxi7707@qq.com`.
+
 ## What It Changes
 
 - Redirects Voxy multiplayer save resolution into a shared Bonfire path.
