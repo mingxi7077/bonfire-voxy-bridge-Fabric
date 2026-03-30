@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "bonfire_voxy_bridge",
+	"version": "${version}",
+	"name": "Bonfire Voxy Bridge",
+	"description": "Bonfire special Fabric companion that forces Voxy multiplayer saves into one shared map root, ignoring server domain splits.",
+	"authors": [
+		"Codex for Bonfire"
+	],
+	"contact": {},
+	"license": "All Rights Reserved",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.bonfiremc.voxybridge.BonfireVoxyBridgeClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "bonfire-voxy-bridge.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"voxy": "*"
+	}
+}

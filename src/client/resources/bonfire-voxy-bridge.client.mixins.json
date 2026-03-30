@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.bonfiremc.voxybridge.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"VoxyClientInstanceMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
