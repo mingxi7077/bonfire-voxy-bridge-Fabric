@@ -1,41 +1,79 @@
 # Bonfire Voxy Bridge (Fabric)
 
-![License](https://img.shields.io/badge/license-BNSL--1.0-red)
-![Commercial Use](https://img.shields.io/badge/commercial-use%20by%20written%20permission%20only-critical)
-![Platform](https://img.shields.io/badge/platform-Fabric%201.21.8-brightgreen)
-![Side](https://img.shields.io/badge/side-client-blueviolet)
-![Java](https://img.shields.io/badge/java-21-orange)
+[English](#english) | [简体中文](#简体中文)
+
+Bonfire Voxy Bridge is a Fabric client companion for unified Voxy multiplayer cache storage.
+
+Bonfire Voxy Bridge 是一个用于统一 Voxy 多人缓存目录的 Fabric 客户端附属模组。
+
+---
+
+## English
 
 Bonfire Voxy Bridge is a Fabric client companion that forces Voxy multiplayer saves into one shared Bonfire map root instead of splitting cache data by domain or IP.
 
-> Non-commercial source-available. Commercial use requires prior written permission via `mingxi7707@qq.com`.
-
-## What It Changes
+### What It Changes
 
 - Redirects Voxy multiplayer save resolution into a shared Bonfire path.
 - Prevents duplicate map cache trees when the same server is reached through multiple entry points.
 - Keeps singleplayer behavior untouched.
 
-## Compatibility
+### Compatibility
 
 - Minecraft Java `1.21.8`
 - Fabric Loader `0.18.3+`
 - Voxy `0.2.5-alpha`
 - Java `21`
 
-## Build
+### Repository Layout
+
+- `src/`: mod source code
+- `build.gradle`: Gradle build definition
+- `build/`: generated output, excluded from release tracking
+
+### Build
 
 ```powershell
 .\gradlew.bat build
 ```
 
-## Repository Scope
+### License
 
-- Source only.
-- Generated jars, remapped outputs, and local run data are excluded from Git.
+This repository currently uses the `Bonfire Non-Commercial Source License 1.0`.
+See [LICENSE](LICENSE) for the exact terms.
 
-## License
+---
 
-Bonfire Non-Commercial Source License 1.0
+## 简体中文
 
-Commercial use is prohibited unless you first obtain written permission from `mingxi7707@qq.com`.
+Bonfire Voxy Bridge 是一个 Fabric 客户端附属模组，用于强制把 Voxy 的多人缓存写入统一的 Bonfire 地图根目录，而不是按域名或 IP 分裂出多份缓存树。
+
+### 它修改了什么
+
+- 将 Voxy 的多人缓存路径重定向到共享的 Bonfire 目录。
+- 避免同一服务器通过不同入口访问时产生重复缓存树。
+- 保持单人模式行为不变。
+
+### 兼容性
+
+- Minecraft Java `1.21.8`
+- Fabric Loader `0.18.3+`
+- Voxy `0.2.5-alpha`
+- Java `21`
+
+### 仓库结构
+
+- `src/`：模组源码
+- `build.gradle`：Gradle 构建定义
+- `build/`：生成输出，不纳入发布源码
+
+### 构建方式
+
+```powershell
+.\gradlew.bat build
+```
+
+### 授权
+
+本仓库当前采用 `Bonfire Non-Commercial Source License 1.0`。
+具体条款见 [LICENSE](LICENSE)。
